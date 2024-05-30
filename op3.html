@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Real</title>
+    <link rel="stylesheet" href="css/op.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="batata">
+            <div id="logo">
+                <div id="foto_logo"><img src="IMG/header/logo-white2.png" alt="" height="100px"></div>
+                <div id="texto_logo">
+                    <h1>Pet Real</h1>
+                </div>
+            </div>
+        </a>
+
+        <nav id="header_direita">
+            <a href="index.html">HOME</a>
+            <a href="foto.html">FOTO</a>
+            <a href="contato.html">CONTATO</a>
+        </nav>
+    </header>
+    <main>
+        <div id="aa"></div>
+        <a href="agenda.html">
+            <div id="titulo">
+                AVES
+            </div>
+        </a>
+        <div id="bb"></div>
+        </a>
+    </div>
+    <a href="agenda.html" id="retornar">
+        <div ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg></div>
+    </a>
+        <div id="sub">
+            <h1>FORMULARIO</h1>
+        </div>
+
+        <div id="corpo_principal">
+            <p>
+                Queremos expressar nossa profunda gratidão a todos os tutores e seus pets que escolheram o nosso hotel
+                para pets como o lar temporário de seus amados companheiros.
+
+                É uma honra cuidar dos seus animais de estimação e proporcionar-lhes uma estadia confortável, segura e
+                repleta de carinho. Cada patinha que pisa em nossas dependências traz alegria aos nossos corações.
+
+                Nossos funcionários dedicados e apaixonados estão comprometidos em garantir que cada pet se sinta em
+                casa, proporcionando cuidados excepcionais, brincadeiras e atenção personalizada.</p>
+            <div id="formu">
+                <form id="formulario">
+                    <label for="nomeProprietario">Nome do Proprietário:</label>
+                    <input type="text" id="nomeProprietario" name="nomeProprietario" autocomplete="off"
+                        required><br><br>
+
+                    <label for="nomePet">Nome do Pet:</label>
+                    <input type="text" id="nomePet" name="nomePet" required autocomplete="off"><br><br>
+
+                    <label for="espes">Espécie do pet:</label>
+                    <input type="text" id="espes" name="espec" autocomplete="off" required><br><br>
+
+                    <label for="raçadoPet">Raça do pet:</label>
+                    <input type="text" id="raçadoPet" name="raçadoPet" autocomplete="off" required><br><br>
+
+                    <label for="tempoHospedagem">Tempo de Hospedagem:</label>
+                    <input type="text" id="tempoHospedagem" name="tempoHospedagem" autocomplete="off" required><br><br>
+
+                    <label for="sobre">Sobre o pet:</label>
+                    <input type="text" id="sobre" name="sobre" autocomplete="off"><br><br>
+                    <button>Efetuar hospedagem</button>
+                </form>
+            </div>
+            <div id="espaco"></div>
+    </main>
+    <footer>
+        <div id="footer_logo"> <a href="index.html"><img src="IMG/header/logo-white2.png" alt="" height="100%"></a>
+        </div>
+        <div id="footer_frase">" Conforto e aconchego a o seu pet "</div>
+        <div id="footer_zap"><a href="https://api.whatsapp.com/send/?phone=5511997248887&text&type=phone_number&app_absent=0" target="_blank"><img src="IMG/header/icons8-whatsapp-50.png" alt="" height="100%"></a></div>
+    </footer>
+</body>
+<script>
+
+    var formulario = document.getElementById("formulario");
+    formulario.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+        alert("hospedagem concluida");
+        window.location.href = "index.html";
+
+    });
+
+</script>
+
+
+</html>
